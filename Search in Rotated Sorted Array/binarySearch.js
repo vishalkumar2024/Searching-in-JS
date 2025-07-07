@@ -6,9 +6,8 @@ function search(arr, k) {
 
     while (start <= end) {
         let mid = Math.floor((start + end) / 2);
-        console.log(start,mid,end)
 
-        if (arr[mid] == target) return mid;
+        if (arr[mid] == k) return mid;
 
         //check the left portion
         if (arr[start] <= arr[mid]) {
